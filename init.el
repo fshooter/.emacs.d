@@ -47,7 +47,7 @@
 (load-theme 'monokai t)
 (set-face-attribute
  'default nil :font "Consolas 11")
-(set-fontset-font t 'han (font-spec :family "Microsoft Yahei" :size 16))
+(set-fontset-font t 'han (font-spec :family "Microsoft Yahei" :size 14))
 
 ;; 配置插件
 (helm-mode 1)
@@ -62,6 +62,10 @@
 (add-hook 'c-mode-common-hook 'google-set-c-style)
 (add-hook 'c-mode-common-hook 'google-make-newline-indent)
 (move-text-default-bindings)
+
+(defun org-mode-set-font-size ()
+  (set-fontset-font t 'han (font-spec :family "Microsoft Yahei" :size 16)))
+(add-hook 'org-mode-hook 'org-mode-set-font-size)
 
 ;; 配置键盘绑定
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
