@@ -59,10 +59,6 @@
 (require 'smartparens-config)
 (smartparens-global-mode t)
 (global-undo-tree-mode +1)
-;; (add-hook 'c-mode-common-hook 'google-set-c-style)
-;; (add-hook 'c-mode-common-hook 'google-make-newline-indent)
-;; (add-hook 'c-mode-common-hook
-;; 		  (lambda (set-variable 'c-basic-offset 4)))
 (setq-default tab-width 4)
 (move-text-default-bindings)
 
@@ -120,7 +116,7 @@
                        defun-close-semi
                        list-close-comma
                        scope-operator))
-    (c-offsets-alist . ((arglist-intro google-c-lineup-expression-plus-4)
+    (c-offsets-alist . ((arglist-intro . +)
                         (func-decl-cont . ++)
                         (member-init-intro . ++)
                         (inher-intro . ++)
@@ -138,15 +134,15 @@
                              'c-lineup-assignments)
                           ++))
                         (label . /)
-                        (case-label . +)
-                        (statement-case-open . +)
+                        (case-label . 0)
+                        (statement-case-open . 0)
                         (statement-case-intro . +) ; case w/o {
                         (access-label . /)
                         (innamespace . 0))))
   "Microsoft C/C++ Programming Style.")
 
 (defun microsoft-set-c-style ()
-  "Set the current buffer's c-style to Google C/C++ Programming
+  "Set the current buffer's c-style to Microsoft C/C++ Programming
   Style. Meant to be added to `c-mode-common-hook'."
   (interactive)
   (make-local-variable 'c-tab-always-indent)
