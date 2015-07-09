@@ -150,3 +150,8 @@
   (c-add-style "Microsoft" microsoft-c-style t))
 
 (add-hook 'c-mode-common-hook 'microsoft-set-c-style)
+
+;; white space mode options
+(setq whitespace-style '(face lines-tail trailing empty)
+      whitespace-line-column 80)
+(global-whitespace-mode 1)
