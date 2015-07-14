@@ -5,6 +5,7 @@
     helm
     projectile
     helm-projectile
+	helm-ag
     smartparens
     undo-tree
     expand-region
@@ -149,9 +150,15 @@
   (setq c-tab-always-indent t)
   (c-add-style "Microsoft" microsoft-c-style t))
 
-(add-hook 'c-mode-common-hook 'microsoft-set-c-style)
+(add-hook 'c-mode-common-hook 'google-set-c-style)
+(add-hook 'c-mode-common-hook 'google-make-newline-indent)
 
 ;; white space mode options
-(setq whitespace-style '(face lines-tail trailing empty)
+(setq whitespace-style '(face lines-tail trailing)
       whitespace-line-column 80)
 (global-whitespace-mode 1)
+
+(custom-set-variables
+ '(helm-ag-base-command "pt /nocolor /nogroup /i")
+ '(helm-ag-insert-at-point 'symbol))
+(define-key global-map (kbd "C-c s") 'helm-do-ag)
