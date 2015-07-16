@@ -1,3 +1,5 @@
+(add-to-list 'load-path "~/.emacs.d/lisp")
+
 (require 'package)
 
 (setq oh-packages
@@ -77,33 +79,15 @@
 (add-to-list 'process-coding-system-alist '("[gG][iI][tT]" utf-8 . utf-8))
 (add-to-list 'file-coding-system-alist '(".*\\.git\\.*" utf-8 . utf-8))
 
-(defun my-set-c-style ()
-  "Set the current buffer's c-style to Microsoft C/C++ Programming
-  Style. Meant to be added to `c-mode-common-hook'."
-  (interactive)
-  (make-local-variable 'c-tab-always-indent)
-  (setq c-tab-always-indent t)
-  (c-add-style "Google" google-c-style)
-  (c-add-style "MyCodeStyle"
-			   '("Google"
-				 (c-basic-offset . 4)
-				 (c-offsets-alist . (
-									 (func-decl-cont . +)
-									 (member-init-intro . +)
-									 (inher-intro . +)
-									 (statement-case-open . 0)
-									 (case-label . 0))))
-			   t)
-  (define-key c-mode-base-map "\C-m" 'newline-and-indent)
-  (define-key c-mode-base-map [ret] 'newline-and-indent))
-
+(require 'mycstyle)
 (add-hook 'c-mode-common-hook 'my-set-c-style)
 
 (add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 
 ;; white space mode options
-(setq whitespace-style '(face lines-tail trailing)
-      whitespace-line-column 80)
+(setq whitespace-style '(face lines-tail trailing empty)
+      whitespace-line-column 80
+	  whitespace-action '(cleanup))
 (global-whitespace-mode 1)
 
 (custom-set-variables
