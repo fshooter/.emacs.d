@@ -3,6 +3,7 @@
 (add-to-list 'load-path "~/.emacs.d/lisp")
 
 (require 'plugins)
-(require 'msys-hack)
+;; (require 'msys-hack)
+(require 'cygwin-hack)
 (require 'common-hack)
 (require 'mycustom)
