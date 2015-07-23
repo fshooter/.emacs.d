@@ -7,7 +7,10 @@
 (setq default-buffer-file-coding-system 'gbk-dos)
 ;; msys64目录下的程序编码为utf-8
 (add-to-list 'process-coding-system-alist
-			 '(".*/msys64/*" utf-8-unix . utf-8-unix))
+			 '(".*/msys64/.*" utf-8-unix . utf-8-unix))
+(add-to-list 'process-coding-system-alist
+ 			 '("cmdproxy.exe"
+			   gbk-dos . gbk-dos))
 
 ;; git相关配置
 (add-to-list 'process-coding-system-alist '("[gG][iI][tT]" utf-8 . utf-8))
