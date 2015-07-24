@@ -6,4 +6,5 @@
 ;; (require 'msys-hack)
 (require 'cygwin-hack)
 (require 'common-hack)
+(require 'mypowerline)
 (require 'mycustom)

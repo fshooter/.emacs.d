@@ -16,7 +16,8 @@
     ace-window
     company
     magit
-    move-text))
+    move-text
+	powerline))
 
 (setq package-refreshed nil)
 
