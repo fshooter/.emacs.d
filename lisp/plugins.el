@@ -3,7 +3,7 @@
 (require 'package)
 
 (setq oh-packages
-  '(monokai-theme
+  '(ample-theme
     helm
     projectile
     helm-projectile
@@ -41,7 +41,7 @@
 (oh-install-packages oh-packages)
 
 ;; 加载主题和字体
-(load-theme 'monokai t)
+(load-theme 'ample t)
 
 ;; 配置插件
 (helm-mode 1)
