@@ -15,5 +15,17 @@
        "\\|.*文件尾没有.*"
        "\\|^\C-m?$"
        "\\)"))
+(setq ediff-diff3-ok-lines-regexp
+	  (concat
+	   "^\\("
+	   "[1-3]:"
+	   "\\|===="
+	   "\\|  "
+	   "\\|.*Warning *:"
+	   "\\|.*No newline"
+	   "\\|.*missing newline"
+	   "\\|.*文件尾没有.*"
+	   "\\|^\C-m?$"
+	   "\\)"))
 
 (provide 'cygwin-hack)
