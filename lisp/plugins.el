@@ -17,7 +17,8 @@
     company
     magit
     move-text
-	powerline))
+	powerline
+	multiple-cursors))
 
 (setq package-refreshed nil)
 

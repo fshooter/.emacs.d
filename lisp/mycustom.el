@@ -25,4 +25,9 @@
 (define-key global-map (kbd "C-=") 'er/expand-region)
 (define-key global-map (kbd "C-c s") 'helm-do-ag)
 
+(global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
+(global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
+
 (provide 'mycustom)
