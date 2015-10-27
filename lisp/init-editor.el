@@ -57,4 +57,17 @@
   :bind
   ("C-<f3>" . highlight-symbol))
 
+;; beacon-mode
+(use-package beacon
+  :config
+  (beacon-mode 1)
+  (setq beacon-color "#ffa500"))
+
+;; spaceline
+(use-package spaceline
+  :config
+  (require 'spaceline-config)
+  (spaceline-emacs-theme)
+  (spaceline-toggle-minor-modes-off))
+
 (provide 'init-editor)

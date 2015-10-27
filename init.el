@@ -12,8 +12,8 @@
 (require 'init-elpa)
 (require 'init-use-package)
 (require 'init-theme)
-(require 'init-powerline)
 (require 'init-editor)
+(require 'init-markdown)
 (require 'init-mycstyle)
 (require 'init-magit)
 (require 'init-helm-projectile)
@@ -34,6 +34,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(markdown-command
+   "C:/Users/fan/AppData/Local/Programs/Python/Python35/Scripts/markdown_py.bat")
  '(package-selected-packages
    (quote
-	(helm-gtags elisp--witness--lisp yasnippet highlight-symbol use-package undo-tree spaceline smartparens multiple-cursors move-text magit highlight-thing helm-projectile helm-ag expand-region company anzu ample-theme ace-window ace-jump-mode))))
+	(markdown-mode beacon beacon-mode helm-gtags elisp--witness--lisp yasnippet highlight-symbol use-package undo-tree spaceline smartparens multiple-cursors move-text magit highlight-thing helm-projectile helm-ag expand-region company anzu ample-theme ace-window ace-jump-mode))))
