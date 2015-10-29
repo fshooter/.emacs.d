@@ -13,15 +13,17 @@
 (require 'init-use-package)
 (require 'init-theme)
 (require 'init-editor)
-(require 'init-markdown)
-(require 'init-mycstyle)
 (require 'init-magit)
 (require 'init-helm-projectile)
 (require 'init-yasnippet)
 (require 'init-company)
 (require 'init-misc)
 
-(require 'init-c++-mode)
+(require 'init-c++)
+(require 'init-mycstyle)
+(require 'init-markdown)
+(require 'init-js)
+(require 'init-py)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -38,4 +40,4 @@
    "C:/Users/fan/AppData/Local/Programs/Python/Python35/Scripts/markdown_py.bat")
  '(package-selected-packages
    (quote
-	(markdown-mode beacon beacon-mode helm-gtags elisp--witness--lisp yasnippet highlight-symbol use-package undo-tree spaceline smartparens multiple-cursors move-text magit highlight-thing helm-projectile helm-ag expand-region company anzu ample-theme ace-window ace-jump-mode))))
+	(python-mode js2-mode markdown-mode beacon beacon-mode helm-gtags elisp--witness--lisp yasnippet highlight-symbol use-package undo-tree spaceline smartparens multiple-cursors move-text magit highlight-thing helm-projectile helm-ag expand-region company anzu ample-theme ace-window ace-jump-mode))))

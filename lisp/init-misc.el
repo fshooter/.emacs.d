@@ -1,5 +1,3 @@
-(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
-
 ;; ediff配置
 (setq ediff-coding-system-for-read 'utf-8)
 (setq ediff-diff-ok-lines-regexp
