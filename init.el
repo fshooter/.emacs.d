@@ -17,13 +17,17 @@
 (require 'init-helm-projectile)
 (require 'init-yasnippet)
 (require 'init-company)
-(require 'init-misc)
+
+(require 'init-chinese)
 
 (require 'init-c++)
 (require 'init-mycstyle)
 (require 'init-markdown)
 (require 'init-js)
 (require 'init-py)
+
+(when (eq system-type 'windows-nt)
+  (require 'init-mswin))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
