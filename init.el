@@ -44,4 +44,4 @@
    "C:/Users/fan/AppData/Local/Programs/Python/Python35/Scripts/markdown_py.bat")
  '(package-selected-packages
    (quote
-	(python-mode js2-mode markdown-mode beacon beacon-mode helm-gtags elisp--witness--lisp yasnippet highlight-symbol use-package undo-tree spaceline smartparens multiple-cursors move-text magit highlight-thing helm-projectile helm-ag expand-region company anzu ample-theme ace-window ace-jump-mode))))
+	(rainbow-delimiters helm-ls-git python-mode js2-mode markdown-mode beacon beacon-mode helm-gtags elisp--witness--lisp yasnippet highlight-symbol use-package undo-tree spaceline smartparens multiple-cursors move-text magit highlight-thing helm-projectile helm-ag expand-region company anzu ample-theme ace-window ace-jump-mode))))

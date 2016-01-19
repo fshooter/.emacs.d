@@ -40,7 +40,7 @@
        (oh-install-packages (cdr packages)))))
 
 (add-to-list 'package-archives
-             '("melpa" . "http://melpa.org/packages/") t)
+          '("popkit" . "http://elpa.popkit.org/packages/"))
 (package-initialize)
 
 (provide 'init-elpa)
