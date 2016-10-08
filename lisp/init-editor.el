@@ -1,7 +1,10 @@
 ;; -*- coding: utf-8 -*-
 
 (setq-default tab-width 4)
+(setq-default indent-tabs-mode nil)
 (setq-default c-basic-offset 4)
+(setq c-default-style "linux"
+      c-basic-offset 4)
 
 ;; 设置字体
 (set-face-attribute
