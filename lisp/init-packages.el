@@ -13,33 +13,36 @@
     (package-install package)))
 
 (defun my/install-packages (packages)
-  (if packages
-      (progn
-		(my/install-package (car packages))
-		(my/install-packages (cdr packages)))))
+  (dolist (pkg packages)
+    (my/install-package pkg)))
+
+(defconst my/packages '(use-package
+                         ample-theme
+                         powerline
+                         projectile
+                         smartparens
+                         undo-tree
+                         browse-kill-ring
+                         expand-region
+                         ace-jump-mode
+                         pangu-spacing
+                         company
+                         magit
+                         multiple-cursors
+                         highlight-symbol
+                         highlight-parentheses
+                         which-key
+                         helm
+                         helm-projectile
+                         helm-ag
+                         anzu
+                         highlight-thing
+                         dired+))
 
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
-(my/install-packages '(use-package
-						ample-theme
-						projectile
-						smartparens
-						undo-tree
-						expand-region
-						ace-jump-mode
-						ace-window
-						company
-						magit
-						multiple-cursors
-						highlight-symbol
-						highlight-parentheses
-						which-key
-						helm
-						helm-projectile
-						helm-ag
-						swiper-helm
-						anzu))
+(my/install-packages my/packages)
 
 (provide 'init-packages)
