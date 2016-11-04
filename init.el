@@ -27,7 +27,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (dired+ pangu-spacing browse-kill-ring browser-kill-ring powerline ag counsel swiper which-key highlight-parentheses yasnippet use-package undo-tree spaceline smartparens rainbow-delimiters python-mode multiple-cursors move-text markdown-mode magit js2-mode highlight-thing highlight-symbol helm-projectile helm-ls-git helm-git-grep helm-ag expand-region company beacon auto-complete anzu ample-theme ace-window ace-jump-mode))))
+    (dired+ pangu-spacing browse-kill-ring powerline ag which-key highlight-parentheses yasnippet use-package undo-tree smartparens rainbow-delimiters python-mode multiple-cursors markdown-mode magit js2-mode highlight-thing highlight-symbol helm-projectile helm-ag expand-region company anzu ample-theme ace-jump-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
