@@ -6,6 +6,10 @@
 (setq c-default-style "linux"
       c-basic-offset 4)
 
+(add-hook 'find-file-hook
+          '(lambda ()
+             (read-only-mode)))
+
 (when (eq system-type 'windows-nt)
   (set-face-attribute
    'default nil :font "Consolas 13")
