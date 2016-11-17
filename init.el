@@ -20,6 +20,9 @@
 (require 'init-c++)
 (require 'init-markdown)
 
+(when (eq system-type 'windows-nt)
+  (require 'init-windows))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

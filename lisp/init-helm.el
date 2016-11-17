@@ -13,4 +13,8 @@
   :config
   (helm-projectile-on))
 
+(use-package helm-ag
+  :config
+  (setq helm-ag-base-command "pt -e --nocolor --nogroup"))
+
 (provide 'init-helm)

@@ -10,11 +10,6 @@
           '(lambda ()
              (read-only-mode)))
 
-(when (eq system-type 'windows-nt)
-  (set-face-attribute
-   'default nil :font "Consolas 13")
-  (set-fontset-font t 'han (font-spec :family "Microsoft Yahei" :size 14)))
-
 ;; whitespace
 (setq whitespace-style '(face lines-tail trailing empty)
       whitespace-line-column 80
