@@ -6,10 +6,6 @@
 (setq c-default-style "linux"
       c-basic-offset 4)
 
-(add-hook 'find-file-hook
-          '(lambda ()
-             (read-only-mode)))
-
 ;; whitespace
 (setq whitespace-style '(face lines-tail trailing empty)
       whitespace-line-column 80
